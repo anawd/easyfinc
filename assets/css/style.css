@@ -44,6 +44,10 @@ img {
 	
 }
 
+.home .container img.img_home{
+	max-width: 55%;
+}
+
 .home .container .textos {
 	display: flex;
 	justify-content: center;
@@ -89,12 +93,17 @@ img {
 	width: 100%;
 }
 
+.home .container .formulario input:focus{
+	outline: none;
+}
+
 .home .container .formulario input.btn_enviar{
 	background: #0D47A1;
 	border: 1px solid #0D47A1;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 8px #0D47A1;
 	border-radius: 8px;
+	cursor: pointer;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
@@ -141,11 +150,6 @@ img {
 	width: 30%;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  
-}
-
 /*Página de obrigado!*/
 
 .textos_thanks h1{
@@ -175,10 +179,22 @@ img {
 }
 
 .footer_thanks img{
-	max-width: 60%;;
+	max-width: 60%;
 }
 
-.img_thanks{
-	display: block;
-	max-width: 100%;
+
+@media (min-width: 320px) and (max-width: 600px) {
+  
+  .home .container {
+  	margin: 20px;
+  }
+
+  .home .container img.img_home {
+    max-width: 75%;
+ }
+
+  .home .container .footer img {
+  	width: 65%;
+  	margin-top: 15px;
+  }
 }
