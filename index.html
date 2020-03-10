@@ -3,10 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Landing Page - EasyFinc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-	<h1>Landing Page EasyFinch</h1>
+	
+	<section class="home">
+		<div class="container">
+			<img src="assets/images/image_home.jpg" alt="">
+			<div class="textos">
+				<h1>Loren Ipsun Dolor</h1>
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue porta sem vel tempus.</h2>
+			</div>
+			<div class="formulario">
+				<form method="POST" action="URL do seu time">
+			      <input
+			        name="name"
+			        type="text"
+			        pattern="^\D{2,}\s[\D\s]{2,}$"
+			        title="Digite seu nome completo"
+			        placeholder="Digite seu nome completo"
+			        required
+			      />
+			      <input
+			        name="email"
+			        type="email"
+			        title="Digite um email válido"
+			        placeholder="Digite um email válido"
+			        required
+			      />
+			      <input name="redirectTo" type="hidden" value="https://gama.academy" />
+			      <input name="debugMode" type="hidden" value="true" />
+			      <input type="submit" class="btn_enviar"/>
+			    </form>
+			</div>
+			<!--<div class="footer">
+				<img src="assets/images/easyfinc_logo.svg" class="logo_footer" alt="EasyFinc">
+			</div>-->
+			<footer class="footer">
+				<img src="assets/images/easyfinc_logo.svg" class="logo_footer" alt="EasyFinc">
+			</footer>
+		</div>
+	</section>
 	
 </body>
 </html>
