@@ -45,7 +45,7 @@ img {
 }
 
 .home .container img.img_home{
-	max-width: 55%;
+	max-width: 65%;
 }
 
 .home .container .textos {
@@ -83,7 +83,7 @@ img {
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 	border-radius: 17px;
 	max-width: 330px;
-	margin-top: 35px;
+	margin-top: 55px;
 	padding: 35px 20px;
 }
 
@@ -148,6 +148,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	margin-top: 50px;
 }
 
 .home .container .footer img {
