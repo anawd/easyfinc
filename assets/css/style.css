@@ -72,6 +72,10 @@ img {
 	padding-top: 10px;
 }
 
+.home .container .textos h2 span{
+	font-weight: 700;
+}
+
 .home .container .formulario{
 	display: flex;
 	flex-direction: column;
