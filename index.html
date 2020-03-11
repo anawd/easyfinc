@@ -9,6 +9,24 @@
 	<link rel="icon" href="assets/images/favicon.png" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '2938516616209758');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=2938516616209758&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
 </head>
 <body>
 	
@@ -37,7 +55,6 @@
 			        required
 			      />
 			      <input name="redirectTo" type="hidden" value="https://www.buzzfeed.com/famousstar10/cada-meu-dinheiro-f66ocb4e7c" />
-			      <input name="debugMode" type="hidden" value="true" />
 			      <input type="submit"value="Começar Quiz" class="btn_enviar"/>
 			    </form>
 			</div>
@@ -46,6 +63,27 @@
 			</footer>
 		</div>
 	</section>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209390-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-160209390-1');
+	</script>
+
+	<!-- Hotjar Tracking Code for https://easyfinc-lp.netlify.com -->
+	<script>
+	    (function(h,o,t,j,a,r){
+	        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+	        h._hjSettings={hjid:1722659,hjsv:6};
+	        a=o.getElementsByTagName('head')[0];
+	        r=o.createElement('script');r.async=1;
+	        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+	        a.appendChild(r);
+	    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
 	
 </body>
 </html>
