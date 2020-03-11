@@ -68,11 +68,16 @@ img {
 	line-height: 21px;
 	text-align: center;
 	color: #212121;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 .home .container .textos h2 span{
 	font-weight: 700;
+}
+
+.home .container .textos h3{
+	text-align: center;
+	padding-top: 10px;
 }
 
 .home .container .formulario{
@@ -199,5 +204,17 @@ img {
 
   .home .container .footer img {
   	width: 80%;
+  }
+
+  .home .container .textos h1{
+  	font-size: 24px;
+    line-height: 26px;
+
+  }
+
+  .home .container .textos h3{
+  	font-size: 17px;
+    text-align: center;
+    padding-top: 15px;
   }
 }
