@@ -43,7 +43,7 @@ img {
 	flex-wrap: wrap;
 	padding: 40px;
 	position: relative;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .home .container::before{
@@ -224,6 +224,11 @@ img {
 
 
 @media (min-width: 320px) and (max-width: 600px) {
+
+	.home .container{
+		margin-top: 0;
+		margin: 10px;
+	}
 
 
    .home .container .header_logo{
