@@ -13,7 +13,7 @@
   text-rendering:optimizeLegibility;
 }
 
-body { background: #00E676; font-family: 'Roboto', sans-serif; font-size:18px; font-weight:400; cursor:default;  overflow-x: hidden; }
+body { background: #fff; font-family: 'Roboto', sans-serif; font-size:18px; font-weight:400; cursor:default;  overflow-x: hidden; }
 html, body {height:100%; width: 100%;}
 
 ul {
@@ -31,53 +31,93 @@ img {
 
 
 .home .container{
+	background: url('../images/bkg.jpg') no-repeat center center;
+	background-size: cover;
 	border-radius: 20px;
-	background: #fff;
-	max-width: 490px;
+	max-width: 1300px;
+	min-height: 835px;
 	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 25px;
 	padding: 40px;
-	
+	position: relative;
+	margin-top: 40px;
 }
 
-.home .container img.img_home{
-	max-width: 65%;
+.home .container::before{
+	content: "";
+	background: #0D47A1;
+	border-radius: 20px;
+	mix-blend-mode: multiply;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+}
+
+
+.home .container .header_logo {
+	width: 855px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.home .container .header_logo img {
+	width: 20%;
+}
+
+.home .container .wrap_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	max-width: 855px;
 }
 
 .home .container .textos {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	flex: 0 0 50%;
 }
 
 .home .container .textos h1 {
 	font-weight: 700;
-	font-size: 32px;
-	line-height: 36px;
-	text-align: center;
-	color: #002171;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: left;
+	color: #02EA86;
 	padding-top: 15px;
 }
 
 .home .container .textos h2 {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 21px;
-	text-align: center;
-	color: #212121;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 35px;
+	text-align: left;
+	color: #fff;
 	padding-top: 15px;
 }
 
-.home .container .textos h2 span{
-	font-weight: 700;
+.home .container .textos p{
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 35px;
+	text-align: left;
+	color: #fff;
+	padding-top: 15px;
 }
 
-.home .container .textos h3{
-	text-align: center;
-	padding-top: 10px;
+.home .container .textos p span{
+	font-weight: 900;
+	display: block;
+	padding-bottom: 15px;
 }
 
 .home .container .formulario{
@@ -88,7 +128,9 @@ img {
 	border-radius: 17px;
 	max-width: 330px;
 	margin-top: 55px;
+	min-height: 435px;
 	padding: 35px 20px;
+	flex: 0 0 50%;
 }
 
 .home .container .formulario input {
@@ -96,9 +138,10 @@ img {
 	box-sizing: border-box;
 	border-radius: 10px;
 	height: 40px;
-	margin-bottom: 25px;
+	margin-top: 50px;
 	padding: 10px;
 	width: 100%;
+	
 }
 
 .home .container .formulario input:focus{
@@ -106,10 +149,8 @@ img {
 }
 
 .home .container .formulario input.btn_enviar{
-	background: #0D47A1;
-	border: 1px solid #0D47A1;
-	box-sizing: border-box;
-	box-shadow: 0px 0px 8px #0D47A1;
+	background: #00B248;
+	border: none;
 	border-radius: 8px;
 	cursor: pointer;
 	font-weight: 700;
@@ -118,6 +159,10 @@ img {
 	text-align: center;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	width: 180px;
+	margin: 0 auto;
+	margin-top: 80px;
+	display: block;
 }
 
 .home .container .formulario 
@@ -144,20 +189,6 @@ img {
 	color: #C4C4C4;
 }
 
-
-/*Footer*/
-
-.home .container .footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	margin-top: 50px;
-}
-
-.home .container .footer img {
-	width: 65%;
-}
 
 /*Página de obrigado!*/
 
@@ -193,28 +224,43 @@ img {
 
 
 @media (min-width: 320px) and (max-width: 600px) {
+
+
+   .home .container .header_logo{
+   	justify-content: center;
+   }
+
+   .home .container .header_logo img{
+   		width: 45%;
+   }
   
-  .home .container {
-  	margin: 20px;
-  }
-
-  .home .container img.img_home {
-    max-width: 75%;
- }
-
-  .home .container .footer img {
-  	width: 80%;
+  .home .container .wrap_content {
+  	flex-direction: column;
   }
 
   .home .container .textos h1{
-  	font-size: 24px;
-    line-height: 26px;
-
+  	font-size: 35px;
+  	line-height: 41px;
+  	margin-top: 35px;
   }
 
-  .home .container .textos h3{
-  	font-size: 17px;
-    text-align: center;
-    padding-top: 15px;
+  .home .container .textos h2, .home .container .textos p{
+  	font-size: 16px;
+  	line-height: 19px;
   }
+
+  .home .container .formulario{
+  	min-height: auto;
+  }
+
+  .home .container .formulario input{
+  	margin-bottom: 20px;
+  	margin-top: 0;
+  }
+
+  .home .container .formulario input.btn_enviar{
+  	margin-top: 32px;
+  }
+
+  
 }
